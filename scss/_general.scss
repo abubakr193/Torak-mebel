@@ -22,7 +22,7 @@ body{
     height: 100%;
     display: flex;
     flex-direction: column;
-    font-family: "Fraunces,Serif";
+    font-family: 'Gilroy', 'Arial', 'san-serif';
     font-size: 16px;
     line-height: 1.5;
     margin: 0;
@@ -35,3 +35,12 @@ img{
 main{
     flex-grow: 1;
 }
+
+h2, h3, h4{
+  margin: 0;  
+}
+
+p{
+    margin: 0;
+}
+

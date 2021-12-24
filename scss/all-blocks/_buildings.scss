@@ -1,0 +1,150 @@
+.buildings {
+    background-color: #FFFBF7;
+}
+
+.buildings .container {
+    padding-top: 145px;
+    padding-bottom: 145px;
+}
+
+.buildings__heading {
+    width: 467px;
+    margin: 0;
+    margin-bottom: 40px;
+    font-size: 36px;
+    line-height: 48px;
+    color: #2B2A28;
+}
+
+.box {
+    display: flex;
+}
+
+.buildings__info {
+    max-width: 370px;
+    width: 100%;
+    padding-bottom: 40px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 30px rgba(43, 42, 40, 0.08);
+    border-radius: 0px 40px 0px 0px;
+
+    & + & {
+        margin-left: 30px;
+    }
+}
+
+.buildings__image {
+    margin: 5px;
+    margin-bottom: 36px;
+}
+
+.buildings__info__heading {
+    margin-bottom: 18px;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 30px;
+    color: #2B2A28;
+}
+
+.buildings__list {
+    max-width: 301px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    list-style-type: none;
+}
+
+
+.buildings__arrow {
+    margin-right: 15px;
+}
+
+.buildings__text {
+    display: inline-block;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 22px;
+    color: #2B2A28;
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .buildings__heading {
+        margin: 0 auto;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .box {
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .buildings__info {
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 809px) {
+    .buildings__info {
+        & + & {
+            margin-left: 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 505px) {
+    .buildings__heading {
+        width: 90%;
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 30px;
+    }
+}
+
+@media only screen and (max-width: 405px) {
+
+    .buildings .container {
+        padding: 60px 10px;
+    }
+
+    .buildings__heading {
+        width: 300px;
+    }
+
+    .buildings__info {
+        width: 300px;
+    }
+
+    .buildings__info::before {
+        width: 290px;
+        height: 200px;
+        background-image: url('../../images/fon-1-mobile.png');
+        display: block;
+        margin: 5px;
+        margin-bottom: 28px;
+        content: '';
+    }
+    .buildings__image {
+        display: none;
+    }
+
+    .buildings__info__heading {
+        width: 256px;
+        margin-bottom: 9px;
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .buildings__list {
+        width: 256px;
+    }
+
+    .buildings__text {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+
